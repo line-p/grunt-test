@@ -1,0 +1,7 @@
+extends model/main
+
+block page-body
+  - var user = { description: 'foo bar baz',name:'foo bar' }
+  - var authorised = false
+   unless user.isAnonymous
+      p You're logged in as #{user.name}
