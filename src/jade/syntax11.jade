@@ -1,0 +1,11 @@
+extends model/main
+
+block page-body
+  a(href='google.com') google
+  a(class='google', href='google.com') google
+  - var authenticated = true
+  span(class= authenticated ? 'auted' : 'auno') 名字名字
+  input(mame='agreement',type='checkbox',checked)
+  div(escaped='<code>') 更多&gt&gt
+  div(escaped!='<code>')
+

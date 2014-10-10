@@ -1,0 +1,8 @@
+extends model/main
+
+block page-body
+  //- - var user = {name:'Forbes Lindesay'}
+  //- p welcome #{user.name}
+  - var user = {name:'<strong>Forbes Lindesay</strong>'}
+  p welcome #{user.name}
+  p welcome !{user.name}

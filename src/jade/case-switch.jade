@@ -1,0 +1,25 @@
+extends model/main
+
+block page-body
+  //- - var friends = 10
+  //- case fridends
+  //-   when 0
+  //-     p you have no friends
+  //-   when 1
+  //-     p you have a friends
+  //-   default
+  //-     p you have #{friends} friends
+  //- - var friends = 0;
+  //- case friends
+  //-   when 0
+  //-   when 1
+  //-     p you have very few friends
+  //-   default
+  //-     p you have #{friends} friends
+
+  //- also be used
+  - var friends = 1
+  case friends
+    when 0: p you have no friends
+    when 1: p you have a friends
+    default: p you have #{friends} friends

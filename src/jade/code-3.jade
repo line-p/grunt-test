@@ -1,0 +1,11 @@
+extends model/main
+
+block page-body
+  div
+    - for(var x = 0; x< 6; x++)
+      p
+        a(href='javascript:;' class='btn') item
+
+    //- .div1 我是
+    //-   strong 潘伟振
+    .div1!= '我是<strong class="import">潘伟振</strong>'
